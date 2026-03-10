@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Status Badge -->
+        <TextView
+            android:id="@+id/tvItemStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="3dp"
+            android:text="Pending"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Task Title"
+            android:textColor="#212121"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/tvItemDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Task description..."
+            android:textColor="#757575"
+            android:textSize="12sp" />
+
+        <!-- Remarks -->
+        <TextView
+            android:id="@+id/tvItemRemarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Remarks: -"
+            android:textColor="#8D6E63"
+            android:textSize="11sp"
+            android:textStyle="italic" />
+
+        <!-- Due Date -->
+        <TextView
+            android:id="@+id/tvItemDueDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@android:drawable/ic_menu_my_calendar"
+            android:drawablePadding="6dp"
+            android:text="Due: 01/01/2026"
+            android:textColor="#616161"
+            android:textSize="11sp" />
+
+        <!-- Created By -->
+        <TextView
+            android:id="@+id/tvItemCreatedBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:drawableStart="@android:drawable/ic_menu_myplaces"
+            android:drawablePadding="6dp"
+            android:text="By: User"
+            android:textColor="#616161"
+            android:textSize="11sp" />
+
+        <!-- Created On -->
+        <TextView
+            android:id="@+id/tvItemCreatedOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:drawableStart="@android:drawable/ic_menu_recent_history"
+            android:drawablePadding="6dp"
+            android:text="Created: -"
+            android:textColor="#616161"
+            android:textSize="10sp" />
+
+        <!-- Last Updated On -->
+        <TextView
+            android:id="@+id/tvItemUpdatedOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:drawableStart="@android:drawable/ic_menu_recent_history"
+            android:drawablePadding="6dp"
+            android:text="Updated: -"
+            android:textColor="#616161"
+            android:textSize="10sp" />
+
+        <!-- Last Updated By -->
+        <TextView
+            android:id="@+id/tvItemUpdatedBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:drawableStart="@android:drawable/ic_menu_myplaces"
+            android:drawablePadding="6dp"
+            android:text="Updated by: -"
+            android:textColor="#616161"
+            android:textSize="10sp" />
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnItemEdit"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Edit"
+                android:src="@android:drawable/ic_menu_edit"
+                android:tint="#1976D2" />
+
+            <ImageButton
+                android:id="@+id/btnItemDelete"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Delete"
+                android:src="@android:drawable/ic_menu_delete"
+                android:tint="#D32F2F" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
